@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments retrieveComments should successfully retrieve comments 1`] = `
+Array [
+  Object {
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed gravida orci.",
+    "date": "2019-04-23T22:26:43.511Z",
+    "id": 1,
+    "likes": 33,
+    "name": "Dawud Esparza",
+  },
+  Object {
+    "body": "Quisque maximus augue ut ex tincidunt sodales. Nullam interdum consectetur mi at pellentesque.",
+    "date": "2019-04-23T19:26:41.511Z",
+    "id": 2,
+    "likes": 4,
+    "name": "Lennie Wainwright",
+  },
+  Object {
+    "body": "Nam sit amet diam rutrum, venenatis est ac, tempus massa. Etiam tempus libero sit amet bibendum lacinia. Quisque ligula dolor, venenatis quis urna non, tristique laoreet erat.",
+    "date": "2019-04-23T18:26:48.511Z",
+    "id": 3,
+    "likes": 58,
+    "name": "Mindy Sykes",
+  },
+  Object {
+    "body": "Vivamus sit amet turpis nulla. Mauris rhoncus nulla in lobortis rhoncus.",
+    "date": "2019-04-24T08:23:49.511Z",
+    "id": 4,
+    "likes": 91,
+    "name": "Arianne Ashton",
+  },
+]
+`;
+
+exports[`Comments sortByLikes should sort comments on number of likes in descending order  1`] = `
+Array [
+  Object {
+    "body": "Vivamus sit amet turpis nulla. Mauris rhoncus nulla in lobortis rhoncus.",
+    "date": "2019-04-24T08:23:49.511Z",
+    "id": 4,
+    "likes": 91,
+    "name": "Arianne Ashton",
+  },
+  Object {
+    "body": "Nam sit amet diam rutrum, venenatis est ac, tempus massa. Etiam tempus libero sit amet bibendum lacinia. Quisque ligula dolor, venenatis quis urna non, tristique laoreet erat.",
+    "date": "2019-04-23T18:26:48.511Z",
+    "id": 3,
+    "likes": 58,
+    "name": "Mindy Sykes",
+  },
+  Object {
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed gravida orci.",
+    "date": "2019-04-23T22:26:43.511Z",
+    "id": 1,
+    "likes": 33,
+    "name": "Dawud Esparza",
+  },
+  Object {
+    "body": "Quisque maximus augue ut ex tincidunt sodales. Nullam interdum consectetur mi at pellentesque.",
+    "date": "2019-04-23T19:26:41.511Z",
+    "id": 2,
+    "likes": 4,
+    "name": "Lennie Wainwright",
+  },
+]
+`;

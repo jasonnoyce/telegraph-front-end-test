@@ -12,7 +12,9 @@
     "watch": "npm-run-all build:* watch:*",
     "watch:css": "onchange src/css/**/*.css -- npm run build:css",
     "watch:js": "onchange src/js/*.js -- npm run build:js",
-    "test": "jest ./src/"
+    "test": "jest ./src/",
+    "it": "cypress-tags run -e TAGS='not @skip'",
+    "it:watch": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
     "express-handlebars": "^3.1.0"
   },
   "devDependencies": {
+    "cypress": "^5.1.0",
+    "cypress-cucumber-preprocessor": "^2.5.5",
     "jest": "^24.9.0",
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
@@ -37,5 +41,8 @@
     "postcss-import": "^12.0.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }

@@ -1,0 +1,30 @@
+<div id="enriched-comments"></div>
+<!--TODO - Include a loading spinner whilst comments are being retrieved -->
+<div id="hb-template-comments">
+    <!--TODO - Invest more CSS effort into responsive layout for mobile -->
+    <!--TODO - Utilise grid layout better, e.g. No need for width if body is assigned 5 columns -->
+    <!--TODO - SEO heading tag use -->
+    <div class="comments-grid">
+        <div class="comments-header-bar">
+            <div class="comments-header-bar__count">
+                <i class="fas fa-comment-alt" aria-hidden="true"></i>
+                <strong>
+                    <span data-testid="comments-count-testId">\{{comments.length}} Comments</span>
+                </strong>
+            </div>
+            <div class="comments-header-bar__sort">
+                <span>Sort</span>
+                <!--TODO - Consider tab index on buttons for accessibility / Screen Reader -->
+                <button id="likes-sort" class="comments-header-bar__button" type="button"
+                        role="button" aria-pressed="false" >Likes</button>
+                <button id="newest-sort" class="comments-header-bar__button" type="button"  onclick="commentSortNewest()"
+                        role="button" aria-pressed="false" >Newest</button>
+            </div>
+        </div>
+        <ul id="comments-list" class="comments-list" data-testid="comments-list-testId">
+            \{{#each comments}}
+                <li>{{>comment this}}</li>
+            \{{/each}}
+        </ul>
+    </div>
+</div>

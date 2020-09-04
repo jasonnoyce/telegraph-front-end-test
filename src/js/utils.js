@@ -1,6 +1,6 @@
 /**
  * Dummy utility class to demonstrate a basic JS
- * structure and assoiciated test
+ * structure and associated test
  * @param {Object} params - containing:
  * @param {String} homePagePath - the pathname of the homepage (defaults to '/')
  */
@@ -12,7 +12,7 @@ class Utils {
 	}
 
 	/**
-	 * Is the user on the hompage
+	 * Is the user on the homepage
 	 * @return {Boolean}
 	 */
 	isHomePage() {
